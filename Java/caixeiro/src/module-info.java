@@ -1,0 +1,2 @@
+module caixeiro {
+}
