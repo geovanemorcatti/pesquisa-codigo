@@ -25,4 +25,4 @@ if __name__ == '__main__':
     else:
         print("Tem", mult, " múltiplos acima de 2 e abaixo de", n)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+

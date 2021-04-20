@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-
-    #include<stdio.h>
+#include<stdio.h>
 
 int ary[10][10],completed[10],n,cost=0;
 
