@@ -18,5 +18,5 @@ outro ponto que acho importante ele não deixa o código a disposição então b
 
 primeiro dados coletado e a partir dos rolar os códigos números de vezes para fazer a media de tempo  assim repetimos coleta de tempo pelo trabalho e coletamos o tamanhos de linhas e assim desconsideramos as linhas dos tempos pois orginalmente não tem ela contada pois o tempo foi colido por proceso do Linux
 
-
+link di artigo 
  [http://eds.b.ebscohost.com/eds/detail/detail?vid=0&sid=a79c04bd-b733-4d7f-b9c7-192c59c40b2d%40pdc-v-sessmgr03&bdata=Jmxhbmc9cHQtYnImc2l0ZT1lZHMtbGl2ZQ%3D%3D#AN=131069572&db=iih](http://eds.b.ebscohost.com/eds/detail/detail?vid=0&sid=a79c04bd-b733-4d7f-b9c7-192c59c40b2d%40pdc-v-sessmgr03&bdata=Jmxhbmc9cHQtYnImc2l0ZT1lZHMtbGl2ZQ%3d%3d#AN=131069572&db=iih)
