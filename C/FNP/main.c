@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main ( ) {
+    clock_t t;
 	unsigned long long int a = 0;
 	unsigned long long int n;
+	t = clock(); //armazena tempo
 	system ( "title DECOMPONDO EM FATORES PRIMOS" );
 	system ( "cls" );
 	system ( "Color 90" );
@@ -35,5 +38,7 @@ int main ( ) {
 	gotoxy ( 36, 23 );
 	printf ( "MUITO OBRIGADO" );
 	getche ( );
+	t = clock() - t; //tempo final - tempo inicial
+	printf("Tempo de execucao: %lf", ((double)t)/((CLOCKS_PER_SEC/1000)));
 	exit ( 0 );
 }

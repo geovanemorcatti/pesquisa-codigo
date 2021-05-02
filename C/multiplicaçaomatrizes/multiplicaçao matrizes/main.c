@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <conio.h>
 
+
 main() {
 
 //Definição de variaveis
 int i, j, linhaA, colunaA, linhaB, colunaB, x;
-
+clock_t t;
 //Entrada de dados
 printf("\n Informe a quntidade de linhas da matriz A : ");
 scanf("%d",&linhaA);
@@ -18,6 +19,7 @@ scanf("%d",&colunaB);
 
 float matrizA[linhaA][colunaA], matrizB[linhaB][colunaB], matrizC[linhaA][colunaB], aux = 0;
 
+t = clock(); //armazena tempo
 if(colunaA == linhaB) {
 
 	for(i = 0; i < linhaA; i++) {
@@ -80,5 +82,7 @@ if(colunaA == linhaB) {
 } else {
 	printf("\n\n Nao ha com multiplicar as matrizes dadas ");
 }
+t = clock() - t; //tempo final - tempo inicial
+printf("Tempo de execucao: %lf", ((double)t)/((CLOCKS_PER_SEC/1000)));
 
 }

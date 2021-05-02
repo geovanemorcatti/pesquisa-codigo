@@ -9,7 +9,7 @@ public class MatrizMultiplicacao {
 		int a[][]; a = new int[2][2];
 		int b[][]; b = new int[2][2];
 		int c[][]; c = new int[2][2];
-
+		long start = System.currentTimeMillis();
 		for (int i= 0; i < 2; i++){
 				System.out.println();
 			for (int j= 0; j <2; j++){
@@ -35,5 +35,11 @@ public class MatrizMultiplicacao {
 						System.out.print(" ");}
 			}
 		}
+		long elapsed = System.currentTimeMillis() - start;
+		System.out.println("tempo"+elapsed );
 	}
+	
+
+	  
+
 }

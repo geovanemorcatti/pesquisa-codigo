@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<stdio.h>
+#include <time.h>
 
 int ary[10][10],completed[10],n,cost=0;
 
@@ -79,13 +80,16 @@ int least(int c)
 
 int main()
 {
+    clock_t t;
+     t = clock(); //armazena tempo
 	takeInput();
 
 	printf("\n\nThe Path is:\n");
 	mincost(0); //passing 0 because starting vertex
 
 	printf("\n\nMinimum cost is %d\n ",cost);
-
+	t = clock() - t; //tempo final - tempo inicial
+    printf("Tempo de execucao: %lf", ((double)t)/((CLOCKS_PER_SEC/1000)));
 	return 0;
 }
 

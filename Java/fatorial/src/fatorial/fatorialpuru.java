@@ -3,6 +3,7 @@ package fatorial;
 public class fatorialpuru {
 	
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
 		// TODO Auto-generated method stub
 		int n = Integer.parseInt(null);        
 	    int f = 1; 
@@ -18,8 +19,9 @@ public class fatorialpuru {
 	        }
 	        c--;
 	    }
+	    long elapsed = System.currentTimeMillis() - start;
 
-	   System.out.println();
+	   System.out.println(elapsed-start );
 	   
 	}
 

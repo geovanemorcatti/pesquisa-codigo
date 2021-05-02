@@ -62,7 +62,12 @@ def get_minimum(k, a):
 
 
 if __name__ == '__main__':
+    import time
+
+    t1 = time.time()
     main()
+    tempoExec = time.time() - t1
+
 sys.exit(0)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

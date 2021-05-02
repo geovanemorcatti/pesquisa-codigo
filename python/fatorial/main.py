@@ -6,6 +6,7 @@
 
 
 
+import time
 
     def factor(n):
         if (n == 0):
@@ -22,7 +23,9 @@
 
 
     if __name__ == '__main__':
+        t1 = time.time()
         print
-        factor(100
-
+        factor(100)
+        tempoExec = time.time() - t1
+        print("time"+tempoExec)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

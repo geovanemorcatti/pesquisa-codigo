@@ -4,6 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
+import time
 def isprimo(numero):
     if numero != 0 & numero != 1:
         if numero > 3:
@@ -16,5 +17,9 @@ def isprimo(numero):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print("É primo" if isprimo(12) else "Não é primo")
+    t1 = time.time()
+    print("É primo" if isprimo(233333) else "Não é primo")
+    tempoExec = time.time() - t1
+    print("Tempo de execução: {} segundos".format(tempoExec))
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

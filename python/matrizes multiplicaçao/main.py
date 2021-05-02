@@ -10,30 +10,43 @@
 
 
 # Press the green button in the gutter to run the script.
+import time
 
-def multiplica_matriz(a_mat, b_mat):
-    '''(matriz,matriz) -> matriz
+class Matriz:
+    def __init__(self, mat):
+        self.mat = mat
+        self.lin = len(mat)
+        self.col = len(mat[0])
 
-    Recebe duas matriz a_mat e b_mat e cria e retorna
-    a matriz produto  de a_mat por b_mat.
+    def getLinha(self, n):
+        return [i for i in self.mat[n]]
 
-    Pre-condicao: a funcao supoe que o numero
-       de coluna de a_mat e igual ao numero de linhas
-       de b_mat
-    '''
-    print("Vixe! Ainda nao fiz a funcao!")
+    def getColuna(self, n):
+        return [i[n] for i in self.mat]
+
+    # opcional: dar overload no operador de multiplicação
+    def __mul__(self, mat2):
+        matRes = []
+
+        for i in range(self.lin):
+            matRes.append([])
+
+            for j in range(mat2.col):
+                listMult = [x*y for x, y in zip(self.getLinha(i), mat2.getColuna(j))]
+                matRes[i].append(sum(listMult))
+
+        return matRes
 
 #----------------------------------------------
-if __name__ == '__main__':
-a = [ [1, 2, -1], [0, 3, 2] ]
-b = [ [1, -1], [2, 0], [3, 2] ]
-c = multi_matriz(a,b)
-resultado = [ [2, -3], [12, 4] ]
-if c == resultado:
-    print("Passou no primeiro teste! :-)")
-else:
-    print("Nao passou no primeiro teste! :-(")
 
+if __name__ == '__main__':
+    t1 = time.time()
+    mat1 = Matriz([[2, 3], [4, 6]])
+    mat2 = Matriz([[1, 3, 0], [2, 1, 1]])
+    print(mat1 * mat2)
+
+tempoExec = time.time() - t1
+print("Tempo de execução: {} segundos".format(tempoExec))
 # colocar mais testes abaixo
 
 
