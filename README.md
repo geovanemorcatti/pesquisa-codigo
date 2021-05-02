@@ -14,6 +14,7 @@ outro ponto que acho importante ele não deixa o código a disposição então b
 
 1. achamos os códigos 
 2. colocamos  para medir o tempo de execução 
+3. coletamos os outros dados como linha e tamanho dos arquivo 
 ## dados coletados
 
 primeiro dados coletado e a partir dos rolar os códigos números de vezes para fazer a media de tempo  assim repetimos coleta de tempo pelo trabalho e coletamos o tamanhos de linhas e assim desconsideramos as linhas dos tempos pois orginalmente não tem ela contada pois o tempo foi colido por proceso do Linux
